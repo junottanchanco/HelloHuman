@@ -9,6 +9,17 @@
 </head>
 <body>
 	<h1>Hello <c:out value="${firstname} ${lastname}"/>!</h1>
-	<h3>Welcome to Springboot!</h3>
+	<h3>Welcome to Planet Earth!</h3>
+	
+	<fieldset style="width: 400px;">
+		<p style="color:red;">To change your name add the ff to the web address: </p>
+		<p style="color:blue;">/?firstname=(your firstname)&lastname=(your lastname)</p>
+	</fieldset><br>
+	
+	<form method="POST" action="/login">
+		<label>Username: <input type="text" name="user"></label><br>
+		<label>Password: <input type="password" name="password"></label><br>
+		<br><button>Login</button>
+	</form>
 </body>
 </html>
